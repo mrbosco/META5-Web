@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>META5 - Software Development</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<input type="hidden" id="jezik" value="bs"> 
+
+	<div class="bijelaPozadina">
+		<nav class="navGlavna"> <!-- Nnaslovna traka -->
+			<div class="logo"> <!-- box za logo -->
+				<a href="index.html">
+					<img src="img/logo.svg" class="logoImg" alt="meta5 logotip">
+				</a>
+			</div>
+			<div class="menuLinkovi"> <!-- box za linkove -->
+				<ul class="listaLinkovi">
+					<li><a class="navLink" href="o-nama.html">O nama</a></li>
+					<li><a class="navLink projektiKlik" href="index.html#projekt1">Projekti</a></li>
+					<li><a class="navLink" href="usluge.html">Usluge</a></li>
+					<li><a class="navLink kontakt" href="#">Kontakt</a></li>
+					<li><a class="button-nav" target="_blank" href="https://www.paypal.me/meta5/5">Podržite nas</a></li>
+				</ul>
+				<div id="burger-nav">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
+			</div>
+		</nav>
+		<nav class="navMob hidden">
+			<ul class="mobLinkovi">
+				<li><a class="navLink" href="/o-nama">O nama</a></li>
+				<li><a class="navLink projektiKlik" href="index.html#projekt1">Projekti</a></li>
+				<li><a class="navLink" href="/cjenovnik">Cjenovnik</a></li>
+				<li><a class="navLink" href="/kontakt">Kontakt</a></li>
+				<li><a class="button-nav"  target="_blank" href="https://www.paypal.me/meta5/5">Podržite nas</a></li>
+			</ul>
+		</nav>
+		<!-- HERO -->
+	</div>
+
+	<div class="plavaPozadina">
+		<div class="headStil">
+			<h1>Usluge</h1>
+		</div>
+	</div>
+	
+
+		<div class="sivaPozadina" style="padding-bottom: 80px">
+			<div class="whyUs">
+				<div class="whyContent">
+					<div class="whyBox">
+						<img src="img/webApp.svg" width="150px">
+						<h3>Web aplikacije</h3>
+						<p>
+							Bavimo se izradom responzivnih web aplikacija
+							koje će raditi na svakom uređaju.
+						</p>
+					</div>
+					<div class="whyBox">
+						<img src="img/appDev.svg" width="150px">
+						<h3>Android aplikacije</h3>
+						<p>
+							Od nacrta do trgovine Play, razvijamo kompletna
+							rješenja za Android pametne uređaje.
+						</p>
+					</div>
+					<div class="whyBox">
+						<img src="img/dizajn.svg" width="150px">
+						<h3>UI dizajn</h3>
+						<p>
+							Za Vas možemo uraditi i kompletan dizajn
+							web ili mobilne aplikacije koji će pratiti
+							aktuelne trendove.
+						</p>
+					</div>
+					<div class="whyBox" style="margin-left: 13px">
+						<img src="img/trgovina.svg" width="150px">
+						<h3>e-Trgovina</h3>
+						<p>
+							Izrađujemo moderne i sigurne sisteme za sve
+							one koji svoje prizvode žele prodavati online.
+						</p>
+					</div>
+					<div class="whyBox">
+						<img src="img/seo.svg" width="150px">
+						<h3>SEO</h3>
+						<p>
+							Podižemo posjećenost Vaše stranice i primjenjujemo niz metoda 
+							da budete na vrhu Google pretrage.
+						</p>
+					</div>
+					<div class="whyBox">
+						<img src="img/brand.svg" width="150px">
+						<h3>Brendiranje</h3>
+						<p>
+							Pokrenuli ste biznis, a nemate vizuelni identitet za Vaš brend?
+							Razvijamo od logotipa do bannera.
+						</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="interes">
+			<h1 style="color: white; text-align: center; font-size: 2.25rem;
+			font-weight: bold; text-shadow: rgba(21,100,60,0.1) 0 0 10px;padding-top: 60px; display: flex; margin: auto; justify-content: center">Zainteresirani ste?</h1>
+			<h2 style="color: white; text-align: center; font-size: 1.25rem;
+			text-shadow: rgba(21,100,60,0.1) 0 0 10px;margin-top: 10px; margin-bottom: 20px;margin:">Ostavite nam svoju poruku i mi ćemo Vas ubrzo kontaktirati!</h2>
+			<form class="forma">
+				<div class="prviKorak">
+					<input id="email" placeholder="Vaša e-mail adresa" class="emailInput emailInput1" type="text">
+					<input class="submitDugme prviKorakClick" value="Dalje" type="submit">
+				</div>
+				<div class="drugiKorak hidden">
+					<input id="name" placeholder="Vaše ime" class="emailInput  emailInput2" type="text">
+				<input class="submitDugme drugiKorakClick" value="Dalje" type="submit">
+				</div>
+				<div class="treciKorak hidden">
+					<input id="message" placeholder="Vaša poruka" class="emailInput  emailInput3 sendMail" type="text">
+				<input class="submitDugme treciKorakClick sendMail" value="Pošalji" type="submit">
+				</div>	
+			</form>
+			</div>
+	
+		
+		</div>
+	<div class="footer" id="this">
+		<div class="shortLogo">
+			<object data="img/meta5logofooter.svg" style="width:100px" type="image/svg+xml"></object>
+		</div>
+		<div class="social">
+			<p class="fHeader">Social</p> <br>
+			<a href="https://www.facebook.com/meta5.io/">Facebook</a><br>
+			<a href="https://www.youtube.com/channel/UC7kKTf17CGieNqGspX_dE-g">YouTube</a><br>
+			<a href="https://github.com/meta5">GitHub</a><br>
+		</div>
+		<div class="social">
+			<p class="fHeader">Jezici</p> <br>
+			<a href="https://meta5.io/">Bosanski</a><br>
+			<a href="https://meta5.io/indexEng.html">English</a><br>
+		</div>
+		<div class="contactUs">
+			<p class="fHeader">Get in Touch</p> <br>
+			<p>INTERA Tehnološki Park,<br> Bišće polje bb,<br> 88000 Mostar</p>
+			<a href="mailto:contact@meta5.io" style="color: #90959A">contact@meta5.io</a>
+		</div>
+		<div class="copy" style="position: absolute; padding-top: 230px; color:#90959A">
+			© 2017 META5. Sva prava zadržana.
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.all.min.js"></script>
+	<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="contact.js"></script>
+	<script type="text/javascript">
+		WebFontConfig = {
+			google: { families: [ 'Open+Sans:300,400','Hind+Vadodara:400,600','Montserrat:400,700','Maven+Pro:400,500', 'Poppins:400,700,800', 'Lato:400,700' ] }
+		};
+		(function() {
+			var wf = document.createElement('script');
+			wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})();
+    </script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>META5 - Software Development</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <input type="hidden" id="jezik" value="bs"> 
+
+	<div class="bijelaPozadina">
+		<nav class="navGlavna"> <!-- Nnaslovna traka -->
+			<div class="logo"> <!-- box za logo -->
+				<a href="index.html">
+					<img src="img/logo.svg" class="logoImg" alt="meta5 logotip">
+				</a>
+			</div>
+			<div class="menuLinkovi"> <!-- box za linkove -->
+				<ul class="listaLinkovi">
+					<li><a class="navLink" href="o-nama.html">O nama</a></li>
+					<li><a class="navLink projektiKlik" href="#">Projekti</a></li>
+					<li><a class="navLink" href="usluge.html">Usluge</a></li>
+					<li><a class="navLink kontakt" href="#">Kontakt</a></li>
+					<li><a class="button-nav" target="_blank" href="https://www.paypal.me/meta5/5">Podržite nas</a></li>
+				</ul>
+				<div id="burger-nav">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
+			</div>
+		</nav>
+		<nav class="navMob hidden">
+			<ul class="mobLinkovi">
+				<li><a class="navLink" href="/o-nama">O nama</a></li>
+				<li><a class="navLink" href="#">Projekti</a></li>
+				<li><a class="navLink" href="/cjenovnik">Cjenovnik</a></li>
+				<li><a class="navLink" href="/kontakt">Kontakt</a></li>
+				<li><a class="button-nav"  target="_blank" href="https://www.paypal.me/meta5/5">Podržite nas</a></li>
+			</ul>
+		</nav>
+		<!-- HERO -->
+		<div class="heroPocetna">
+			<div class="tekst">
+				<h1>Bavite se <br> proizvodnjom <br> voća i povrća?</h1>
+				<h2>Efiksan i jednostavan sistem za upravljanje Vašim <br> agrobiznisom.
+				Pratite sa bilo koje lokacije,<br>budite uvijek u toku.</h2><br><br>
+				<a class="callToAction">Saznaj više</a>
+			</div>
+			<div class="slikaHero">
+				<img src="img/farmerTehnologija.svg" class="heroImg" alt="Farmer koristi računar">
+			</div>
+		</div>
+	</div>
+	<div class="sivaPozadina nakrivljen">
+		<div class="partneri">
+			<div class="redPartnera">
+			<ul class="listaPartnera">
+				<li><img class="cityOS" src="https://i.imgur.com/AQkWdh9.png" alt="cityOS Smart Cities"></li>
+				<li><img class="hl" src="img/hl-logobw.png" alt="Hercegovinalijek d.o.o Mostar"></li>
+				<li><img class="intera" src="img/logo_interabw.png" alt="Tehnološki park Intera"></li>
+				<li><img class="katana" src="https://i.imgur.com/yzhZghO.png" alt="KATANA EU Project"></li>
+			</ul>
+			</div>
+			<div class="noviRed hidden">
+			<ul class="listaPartnera2">
+				<li><img class="cityOS" src="https://i.imgur.com/AQkWdh9.png" alt="cityOS Smart Cities"></li>
+				<li><img class="hl" src="img/hl-logobw.png" alt="Hercegovinalijek d.o.o Mostar"></li>
+			</ul>
+			<ul class="listaPartnera2">
+				<li><img class="intera" src="img/logo_interabw.png" alt="Tehnološki park Intera"></li>
+				<li><img class="katana" src="https://i.imgur.com/yzhZghO.png" alt="KATANA EU Project"></li>
+			</ul>
+			</div>
+			<div class="redIspod hidden">
+				<img class="cityOS" src="https://i.imgur.com/AQkWdh9.png" alt="cityOS Smart Cities">
+				<img class="hl" src="img/hl-logobw.png" alt="Hercegovinalijek d.o.o Mostar">
+				<img class="intera" src="img/logo_interabw.png" alt="Tehnološki park Intera">
+				<img class="katana" src="https://i.imgur.com/yzhZghO.png" alt="KATANA EU Project">
+			</div>
+		</div>
+	</div>
+	<div class="sivaPozadina">
+		<div class="ourProduct" id="projekt1">
+			<div class="imgProdu">
+				<img class="htsMonitor" src="img/htsMonitor.png" alt="HTS in Browser">	
+			</div>
+			<div class="tekst">
+			<h2>Efikasan sistem za<br>praćenje<br><strong>procesa berbe</strong></h2>
+			<p><strong>Saznajte koliko su posla obavili berači i slagači</strong>, plaćajte vaše radnike po količini posla i spriječite gubitak novca.</p>
+			<p><strong>Zaboravite na papir i olovku,</strong> naš sistem Vam pruža sve
+			željene informacije koje su precizne i sačuvane. Upravljanje agrobiznisom nikad nije bilo jednostavnije!</p>
+			<p><strong>Sistem se može prilagođavati Vašim potrebama kako biste ga što efikasnije koristili!</strong></p>
+			<object data="img/tehnologije.svg" style="margin-top: 10px" type="image/svg+xml"></object>
+			</div>
+		</div>
+		</div>
+		<div class="kosBijel"></div>
+		<div class="howItWorks">
+			<div class="intro">
+				<img class="tockic" src="img/gear.svg">
+				<h1>Kako funkcioniše naše rješenje?</h1>
+				<p>Naše rješenje se zasniva na 3 ključna koraka: <strong>berači lijepe barkodove</strong>, potom ih <b>slagači skeniraju</b>, <br>a sve informacije se nalaze na <b>online sistemu</b> kojem se može pristupiti sa računara ili mobitela.<br>Rješenje je izuzetno <b>fleksibilno</b> te može prilagoditi da radi i u drugim okolnostima,<br> a sve sa ciljem <b>praćenja rada</b>.</p>
+			</div>
+		</div>
+		<img src="img/foot.png" class="specLinija linijaIsprekidana" style="display: flex; margin: 0 auto; margin-bottom: -270px; margin-top: -90px;">
+		<div style="margin-top: -100px ">
+			<div class="koraci">
+				<div class="korak1">
+				<div class="kimg">
+					<img src="https://i.imgur.com/pVLcnyG.png" width="460px">
+				</div>
+				<div class="ktekst vip">
+					<span>1. KORAK</span>
+					<h2>Berač lijepi <b>barkod</b><br> na <b>gajbu</b></h2>
+					<hr class="separator yellow">
+					<p>Svaki put kada berač na plantaži ubere gajbu, zalijepit će <b>barkod</b> sa liste barkodova koja mu je dodijeljena. Barkodovi se prethodnoj printaju preko <b>naše aplikacije</b> koja omogućuje da se <b>jednim klikom</b> isprintaju <b>jedinstveni</b> kodovi
+					za svakog berača.</p>
+					<img src="img/foot2.png" class="linijaIsprekidana" style="display: flex; margin: 0 auto; margin-bottom: -270px; margin-top: 5px; margin-left: 30px;">
+				</div>
+			</div>
+			<div class="korak1 blup">
+			<div class="kimg">
+					<img src="https://i.imgur.com/6mcimR7.png" style="margin-left: 40px;">
+				</div>
+				<div class="ktekst">
+					<span>2. KORAK</span>
+					<h2>Slagači skeniraju<br> obrađene gajbe</h2>
+					<hr class="separator red">
+					<p>Svaki slagač ima svoj lični <b>skener</b> kojim skenira svaku gajbu
+					koju dođe do njega. Na kraju radnog dana se veoma lako dobije podatak <b>koliko je gajbi svaki slagač ponaosob skenirao</b>, ali isto tako i <b>koliko je koji berač ubrao</b>.</p>
+					<img src="img/foot2.png" class="linijaIsprekidana" style="display: flex; margin: 0 auto; margin-bottom: -270px; margin-top: 5px; margin-left: 30px;">
+				</div>
+			</div>
+			<div class="korak1">
+			<div class="kimg" style="margin-top: 20px; margin-left: -18px">
+					<img src="img/monitor.png" width="460px">
+				</div>
+				<div class="ktekst">
+					<span>3. KORAK</span>
+					<h2>Podaci su dostupni<br>za pregled i analizu</h2>
+					<hr class="separator yellow">
+					<p>Sve informacije o aktivnostima koje su se odvile na plantaži
+					su dostupne putem naše <b>web i mobilne aplikacije</b>. Možete pratiti
+					Vaš prihod tog dana, koliko je koji radnik obradio gajbi te uočiti
+					sve anomalije kako bi na vrijeme poboljšali vaše poslovanje.</p>
+				</div>
+			</div>
+		</div>
+			<div class="sivaPozadina lijenRadnik">
+			<div class="ourProduct">
+			<div class="imgProdu">
+				<img class="htsMonitor" src="img/odmor.png" alt="HTS in Browser">	
+			</div>
+			<div class="tekst">
+			<h2>Zašto je <b>satnica</b> loš način<br>naplate?</h2>
+			<p>Kada je radnik <b>plaćen po satnici</b>, bez obzira
+			na količinu posla, on će ostati <b>isto</b> plaćen. To dosta utiče na <b>produktivnost
+			radnika</b> te otvara prostor da mnogi radnici <b>ljenčare.</b></p>
+			<p>Ukoliko plaćate radnika ne znajući koliko je posla uradio, veoma je moguće
+			da <b>bespotrebno gubite novac.</b></p>
+			<p>Tempo branja je <b>usporen</b> jer radnici nemaju <b>motivaciju</b> da uberu i slože
+			što veći broj gajbi.</p>
+			</div>
+		</div>
+		</div>
+			<div class="interes">
+			<h1 style="color: white; text-align: center; font-size: 2.25rem;
+			font-weight: bold; text-shadow: rgba(21,100,60,0.1) 0 0 10px;padding-top: 60px; display: flex; margin: auto; justify-content: center">Zainteresirani ste?</h1>
+			<h2 style="color: white; text-align: center; font-size: 1.25rem;
+			text-shadow: rgba(21,100,60,0.1) 0 0 10px;margin-top: 10px; margin-bottom: 20px;margin:">Ostavite nam svoju poruku i mi ćemo Vas ubrzo kontaktirati!</h2>
+			<form class="forma">
+				<div class="prviKorak">
+					<input id="email" placeholder="Vaša e-mail adresa" class="emailInput emailInput1" type="text">
+					<input class="submitDugme prviKorakClick" value="Dalje" type="submit">
+				</div>
+				<div class="drugiKorak hidden">
+					<input id="name" placeholder="Vaše ime" class="emailInput  emailInput2" type="text">
+				<input class="submitDugme drugiKorakClick" value="Dalje" type="submit">
+				</div>
+				<div class="treciKorak hidden">
+					<input id="message" placeholder="Vaša poruka" class="emailInput  emailInput3 sendMail" type="text">
+				<input class="submitDugme treciKorakClick sendMail" value="Pošalji" type="submit">
+				</div>	
+			</form>
+			</div>
+		
+		</div>
+	<div class="footer">
+		<div class="shortLogo">
+			<object data="img/meta5logofooter.svg" style="width:100px" type="image/svg+xml"></object>
+		</div>
+		<div class="social">
+			<p class="fHeader">Social</p> <br>
+			<a href="https://www.facebook.com/meta5.io/">Facebook</a><br>
+			<a href="https://www.youtube.com/channel/UC7kKTf17CGieNqGspX_dE-g">YouTube</a><br>
+			<a href="https://github.com/meta5">GitHub</a><br>
+		</div>
+		<div class="social">
+			<p class="fHeader">Jezici</p> <br>
+			<a href="https://meta5.io/">Bosanski</a><br>
+			<a href="#">English</a><br>
+		</div>
+		<div class="contactUs">
+			<p class="fHeader">Get in Touch</p> <br>
+			<p>INTERA Tehnološki Park,<br> Bišće polje bb,<br> 88000 Mostar</p>
+			<a href="mailto:contact@meta5.io" style="color: #90959A">contact@meta5.io</a>
+		</div>
+		<div class="copy" style="position: absolute; padding-top: 230px; color:#90959A">
+			© 2017 META5. Sva prava zadržana.
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.all.min.js"></script>
+	<script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="contact.js"></script>
+	<script type="text/javascript">
+		WebFontConfig = {
+			google: { families: [ 'Open+Sans:300,400','Hind+Vadodara:400,600','Montserrat:400,700','Maven+Pro:400,500', 'Poppins:400,700,800', 'Lato:400,700' ] }
+		};
+		(function() {
+			var wf = document.createElement('script');
+			wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})();
+    </script>
+</body>
+</html>
